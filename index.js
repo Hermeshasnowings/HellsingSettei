@@ -33,11 +33,10 @@ app.get('/makeSettei', async (req, res) => {
     res.send(Set)
 });
 
-//app.get('/Settei', async (req, res) => {
-//    const Settei = await settei.find({});
-/////    res.render('settei', { settei })
-//});
-
+app.get('/Settei', async (req, res) => {
+    const Settei = await Settei.find({});
+    res.render('Settei/index', { Settei })
+});
 
 app.listen(3000, () => {
     console.log('Listening on port 3000')
