@@ -34,8 +34,8 @@ app.get('/makeSettei', async (req, res) => {
 });
 
 app.get('/Settei', async (req, res) => {
-    const Settei = await Settei.find({});
-    res.render('Settei/index', { Settei })
+    const settei = await Settei.find({});
+    res.render('settei', { Settei })
 });
 
 app.listen(3000, () => {
