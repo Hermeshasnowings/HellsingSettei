@@ -1,14 +1,14 @@
 const mongoose = require('mongoose');
-const Settei = require('/Users/hollyplatt/Documents/GitHub/HellsingSettei/HellsingSettei/models/Settei.js');
+const Settei = require('../models/Settei.js');
 
-const seedDB = async () => {
-    await mongoose.connect('mongodb://localhostHellsingSettei')
-    console.log('connected to DB')
-    const settei = new Settei({
-        title: "Integra",
-        imageURL: "test",
-        description: "DESCRIPT"
-    })
-    settei.save().then(() => console.log("Set saved"))
-}
-seedDB();
+await mongoose.connect('mongodb://localhost:27017/HellsingSettei', {
+    useNewURLParser: true,
+    useUnifiedTopology: true,
+    serverSelectionTimeoutMS: 10000
+});
+
+const db = mongoose.connection;
+db.on("error", console.error.bind(console, "connection error:"))
+db.once("open", () => {
+    console.log("Database connected")
+});
