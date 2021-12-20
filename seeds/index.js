@@ -18,7 +18,7 @@ const seedDB = async () => {
     for (let i = 0; i < 1; i++) {
         const Set = new Settei({
             no: "cha-000-00",
-            imageURL: "https://drive.google.com/file/d/1-mxjZl_3V0ABJrSywkVJp0WiDCdYptc6/view?usp=sharing",
+            imageURL: "https://drive.google.com/uc?export=view&id=1-mxjZl_3V0ABJrSywkVJp0WiDCdYptc6",
             description: "DESCRIPT",
             tags: "",
             date: "2006.01.04"
