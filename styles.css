@@ -1,5 +1,5 @@
-.image-l {
-    display: inline-block;
-    margin: auto;
-    max-width: 1100px;
+.navbar a {
+    font-family: Verdana !important;
 }
+
+.gallery {}
