@@ -2,4 +2,6 @@
     font-family: Verdana !important;
 }
 
-.gallery {}
+.main-img {
+    max-width: 100%;
+}
