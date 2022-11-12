@@ -29,11 +29,13 @@
         </div>
     </div>
 </nav>
-<div class="search">
-<form id="form" onsubmit="return false">
-    <input type="text" id="userInput">
-    <button type="submit" onclick="othername()">Search</button>
+<div class="search input-group">
+<div class="form-outline">
+<form id="form" onsubmit="return false" class="form">
+    <input type="text" id="userInput" placeholder="Search for a character">
+    <button type="submit" onclick="othername()" class="btn btn-outline-danger">Search</button>
 </form>
+</div>
 </div>
 <div class="gallery">
 <div id="my-gallery" style="max-width 100%" class="my-gallery"></div>
