@@ -1,6 +1,7 @@
-const input = document.getElementById('search');
-const output = document.getElementById('output');
-
-function printInput() {
-    output.innerHTML = input.value;
+function othername() {
+    const input = document.getElementById('userInput').value
+    myGallery.destroy();
+    myGallery.update({
+        mediaAssets: [{ tag: input }]
+    });
 }

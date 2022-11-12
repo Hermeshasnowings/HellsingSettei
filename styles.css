@@ -1,7 +1,13 @@
-.navbar a {
-    font-family: Verdana !important;
+.navbar {
+    background-color: #591a1a;
 }
 
 .main-img {
     max-width: 100%;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
